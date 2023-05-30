@@ -8,9 +8,11 @@ In this UofT Coding Bootcamp challenge I have created a README.md generator.  Wr
 
 Run the application from Command line using node index.js.  You will be prompted with a series of questions asking you about the application that your are creating a README for.  Once you have entered each answer, the generator will create a newREADME.md which will have all of your answers inside in the corresponding sections. You can use the table of contents to view any section you click.  When you click the license badge at the top you will be brough to a page with more information about the license you chose.  The github link will bring you to the github profile of the username you entered.  The email link should open up an new email in your default email browser addressed to the address you entered.
 
+[![Alt Text](readMeAssets/video-thumbnail.png)](readMeAssets/pro-readme-generator-demo.mp4)
+
 ## Credits
 
-Shout out to my tutor Dane for helping me understand the assignment.
+Shout out to my tutor Dane for helping me understand the assignment and teaching me the beauty of async functions.
 
 ## License
 
