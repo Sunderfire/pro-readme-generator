@@ -74,7 +74,7 @@ async function init() {
     const answers = await inquirer.prompt(questions)
     const markDown = createMarkDown(answers)
     console.log(markDown);
-    writeToFile('README.md', markDown);
+    writeToFile('newREADME.md', markDown);
 }
 
 // Function call to initialize app
