@@ -13,6 +13,17 @@ function renderLicenseBadge(license) {
   };
 }
 
+function renderLicenseSection(license) {
+  switch(license) {
+    case 'MIT':
+      return `This application is covered under the MIT license`
+    case 'Apache':
+      return `This application is covered under the Apache license`
+    case 'Eclipse':
+      return `This application is covered under the Eclipse license`
+  }
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title} ${renderLicenseBadge(data.license)}
@@ -20,22 +31,38 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
+  ##Table of Contents
+  
+  [Installation](#installation)
+
+  [Usage](#usage)
+  
+  [Tests](#tests)
+
+  [License](#license)
+
+  <a id=#installation></a>
   ## Installation
   ${data.installation}
 
+  <a id=#usage></a>
   ## Usage
   ${data.usage}
 
+  <a id=#license></a>
   ## License
-  
+  ${renderLicenseSection(data.license)}
+
   ## Contributing
   ${data.contributing}
 
+  <a id=#tests></a>
   ## Tests
   ${data.tests}
 
   ## Questions
-  ${data.question1}
+  [GitHub](https://github.com/${data.question1})
+  
   You can reach me at ${data.question2}
 `;
 }
